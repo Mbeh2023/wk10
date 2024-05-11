@@ -1,4 +1,4 @@
-
+/*
 terraform {
   backend "s3" {
     bucket         = "week10-sm-terraform"
@@ -8,3 +8,4 @@ terraform {
     dynamodb_table = "state-login"
   }
 }
+*/
