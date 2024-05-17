@@ -13,7 +13,7 @@ pipeline{
         }
         stage('format'){
             steps{
-                sh 'fmt -no-color'
+                sh 'terraform fmt -no-color'
             }
         }
         stage('plan'){
