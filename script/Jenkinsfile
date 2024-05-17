@@ -8,17 +8,17 @@ pipeline{
         }
         stage('validate'){
             steps{
-                sh 'terraform validate'
+                sh 'terraform validate -no-color'
             }
         }
         stage('format'){
             steps{
-                sh 'fmt'
+                sh 'fmt -no-color'
             }
         }
         stage('plan'){
             steps{
-                sh 'terraform plan'
+                sh 'terraform plan -no-color'
             }
         }
         
